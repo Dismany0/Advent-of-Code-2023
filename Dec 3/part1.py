@@ -2,7 +2,6 @@ sum = 0
 f = open('Dec 3/input.txt', 'r')
 data = []
 for line in f:
-    #split line into list of characters
     data.append(list(line))
 f.close()
 
@@ -10,7 +9,6 @@ gears = [[0 for x in range(len(data[y]))] for y in range(len(data))]
 
 def search_around(x, y, length, data, num):
     foundSymbol = False
-    #print around the number
     for ys in range(-1, 2):
         if y+ys < len(data) and y+ys >= 0:
             for xs in range(-1, length+1):
