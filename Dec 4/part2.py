@@ -1,7 +1,7 @@
 sum = 0
 f = open('Dec 4/input.txt', 'r')
 
-# 1 for number of lines in file
+
 repeatArray = [1 for line in f]
 f.close()
 
